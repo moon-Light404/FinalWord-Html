@@ -1,0 +1,217 @@
+/* 头部 */
+
+/* 这个文件主要负责index主页的中间部分的样式 */
+.carousel .item {
+    height: 560px;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 560px;
+}
+/* .banner img:hover {
+    transform: scale(1.03);
+    transition: all 1s;
+} */
+
+
+
+/* 中间内容部分 */
+.szyw {
+    width: 100%;
+    height: 640px;
+    padding: 40px 0px;
+    background-color: #ededed;
+}
+/* 每张图片的底部边距 */
+.szyw .cloum,.lxsx .cloum, .dsxx ,.zgm .cloum{
+    margin-bottom: 20px;
+}
+.szyw .container .row div {
+    height: 411px;
+    background-color: #ededed;
+}
+/* 左边图片部分 */
+.szyw .container .fL a {
+    display: block;
+}
+.szyw .container .fL a img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+.szyw .container .fL a .title {
+   position: absolute;
+   left: 15px;
+   bottom: 0;
+   width: 95%;
+   line-height: 50px;
+   background: rgb(0,0,0,0.6);
+   font-size: 20px;
+   color: #fff;
+   box-sizing: border-box;
+   padding: 0 20px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+/* 右边部分 */
+.szyw .fR ul li {
+    padding: 17px 0;
+    border-bottom: #8f958e dashed 1px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.szyw .fR ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4d678e;
+}
+.szyw .fR ul li dl dt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.szyw .fR ul li dl dt a {
+    font-size: 16px;
+}
+.szyw .fR ul li dl dd {
+    font-size: 16px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    display: none;
+    text-indent: 2em;
+}
+/* 鼠标悬停效果 */
+.szyw .fR ul li:hover {
+    padding-left: 0;
+}
+/* 鼠标移动到上面显示dd */
+.szyw .fR ul li:hover dd {
+    display: block;
+}
+.szyw .fR ul li:hover dt a{
+    font-size: 20px;
+    color: #c40016;
+    font-weight: bold;
+    text-decoration: none;
+}
+.szyw .fR ul li:hover dl a {
+    text-decoration: none;
+}
+.szyw .fR ul li:hover::before {
+    display: none;
+}
+
+
+
+/* 领袖思想部分 */
+.lxsx {
+    background: url(../images/tabbanner.png) no-repeat center center;
+    width: 100%;
+    height: 640px;
+    padding: 40px 0px;
+}
+/* tab分页条 */
+.lxsx #myTab li {
+    width: 120px;
+    text-align: center;
+}
+.lxsx #myTab li:hover a{
+    background-color: #bf2b0e;
+    color: #fff;
+}
+.lxsx #myTab li a {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    background-color: #f1f1f1;
+    color: #333333;
+}
+.lxsx #myTabContent {
+    font-size: 18px;
+}
+
+.lxsx #myTabContent .container .top div {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+}  
+.bottom .descrip {
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 18px;
+}
+
+.dsxx {
+    width: 100%;
+    padding: 40px 0;
+}
+/* 时代思想图片部分 */
+.dsxx .container:nth-child(2) {
+    padding: 0;
+} 
+/* 子绝对父相对 */
+.dsxx .row .col-md-3 img {
+    position: relative;
+}
+.dsxx .row .col-md-3 .title {
+    position: absolute;
+    width: 96%;
+    left: 15px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+
+/* 中国梦部分 */
+.zgm {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #f9f6f9;
+}
+.zgm .con .row div {
+    height: 470px;
+    padding: 0 30px;
+    /* 调整图片间的间距 */
+    background-color: #f9f6f9;
+}
+.zgm .con .row .col-md-4 a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+.zgm .con .row .col-md-4 a img {
+    /* 图片只有相对父级，所以要给父级设置宽度和高度 */
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s linear;
+}
+.zgm .con .row div:hover a img {
+    transform: scale(1.2);
+}
